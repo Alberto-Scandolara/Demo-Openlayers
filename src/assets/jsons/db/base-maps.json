@@ -1,0 +1,164 @@
+{
+  "groups": [
+    {
+      "name": "OSM",
+      "layers": [
+        {
+          "id": "OSM_BRIGHT",
+          "interactions": [],
+          "name": "Bright",
+          "source": {
+
+          },
+          "type": "",
+          "visible": true,
+          "roles": ["USER", "ADMIN"]
+        }
+      ]
+    },
+    {
+      "name": "CartoDB",
+      "layers": [
+        {
+          "id": "CARTODB_LIGHT_ALL",
+          "interactions": [],
+          "name": "Light all",
+          "source": {
+            "url": "https://{1-4}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png"
+          },
+          "visible": false,
+          "roles": ["GUEST", "USER", "ADMIN"]
+        },
+        {
+          "id": "CARTODB_DARK_ALL",
+          "interactions": [],
+          "name": "Dark all",
+          "source": {
+            "url": "https://{1-4}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png"
+          },
+          "visible": false,
+          "roles": ["USER", "ADMIN"]
+        },
+        {
+          "id": "CARTODB_LIGHT_NO_LABELS",
+          "interactions": [],
+          "name": "Light no labels",
+          "source": {
+            "url": "https://{1-4}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png"
+          },
+          "visible": false,
+          "roles": ["USER", "ADMIN"]
+        },
+        {
+          "id": "CARTODB_LIGHT_ONLY_LABELS",
+          "interactions": [],
+          "name": "Light only labels",
+          "source": {
+            "url": "https://{1-4}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}.png"
+          },
+          "visible": false,
+          "roles": ["USER", "ADMIN"]
+        },
+        {
+          "id": "CARTODB_DARK_NO_LABELS",
+          "interactions": [],
+          "name": "Dark no labels",
+          "source": {
+            "url": "https://{1-4}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}.png"
+          },
+          "visible": false,
+          "roles": ["USER", "ADMIN"]
+        },
+        {
+          "id": "CARTODB_ONLY_LABELS",
+          "interactions": [],
+          "name": "Dark only labels",
+          "source": {
+            "url": "https://{1-4}.basemaps.cartocdn.com/dark_only_labels/{z}/{x}/{y}.png"
+          },
+          "visible": false,
+          "roles": ["USER", "ADMIN"]
+        },
+        {
+          "id": "CARTODB_VOYAGER",
+          "interactions": [],
+          "name": "Voyager",
+          "source": {
+            "url": "https://{1-4}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png"
+          },
+          "visible": false,
+          "roles": ["USER", "ADMIN"]
+        },
+        {
+          "id": "CARTODB_VOYAGER_NO_LABELS",
+          "interactions": [],
+          "name": "Voyager no labels",
+          "source": {
+            "url": "https://{1-4}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}.png"
+          },
+          "visible": false,
+          "roles": ["USER", "ADMIN"]
+        },
+        {
+          "id": "CARTODB_VOYAGER_ONLY_LABELS",
+          "interactions": [],
+          "name": "Voyager only labels",
+          "source": {
+            "url": "https://{1-4}.basemaps.cartocdn.com/rastertiles/voyager_only_labels/{z}/{x}/{y}.png"
+          },
+          "visible": false,
+          "roles": ["USER", "ADMIN"]
+        },
+        {
+          "id": "CARTODB_VOYAGER_LABELS_UNDER",
+          "interactions": [],
+          "name": "Voyager labels under",
+          "source": {
+            "url": "https://{1-4}.basemaps.cartocdn.com/rastertiles/voyager_labels_under/{z}/{x}/{y}.png"
+          },
+          "visible": false,
+          "roles": ["USER", "ADMIN"]
+        }
+      ]
+    },
+    {
+      "attributions": [],
+      "name": "STAMEN",
+      "layers": [
+        {
+          "attributions": [],
+          "id": "STAMEN_TONER",
+          "interactions": [],
+          "name": "Toner",
+          "source": {
+            "url": "https://tile.stamen.com/toner/{z}/{x}/{y}.png"
+          },
+          "visible": false,
+          "roles": ["USER", "ADMIN"]
+        },
+        {
+          "attributions": [],
+          "id": "STAMEN_TERRAIN",
+          "interactions": [],
+          "name": "Terrain labels",
+          "source": {
+            "url": "https://tile.stamen.com/terrain/{z}/{x}/{y}.jpg"
+          },
+          "visible": false,
+          "roles": ["USER", "ADMIN"]
+        },
+        {
+          "attributions": [],
+          "id": "STAMEN_WATERCOLOR",
+          "interactions": [],
+          "name": "Watercolor",
+          "source": {
+            "url": "https://tile.stamen.com/watercolor/{z}/{x}/{y}.jpg"
+          },
+          "visible": false,
+          "roles": ["USER", "ADMIN"]
+        }
+      ]
+    }
+  ]
+}

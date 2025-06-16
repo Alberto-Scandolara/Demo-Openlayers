@@ -1,0 +1,19 @@
+{
+  "groups": [
+    {
+      "name": "General",
+      "layers": [
+        {
+          "id": "OSM_BRIGHT",
+          "interactions": [],
+          "name": "Bright",
+          "source": {
+
+          },
+          "visible": true,
+          "roles": ["USER", "ADMIN"]
+        }
+      ]
+    }
+  ]
+}

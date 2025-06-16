@@ -1,0 +1,12 @@
+{
+  "map": {
+    "center": [47.266656, 9.935346],
+    "zoom": 3,
+    "min-zoom": 0,
+    "max-zoom": 24
+  },
+  "base-maps": {
+
+  },
+  "layers": {}
+}
