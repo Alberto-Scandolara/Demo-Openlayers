@@ -15,7 +15,7 @@ interface LayerListComponentProps {
 const LayerList: FC<LayerListComponentProps> = ({ title, layers, type, name, onToggle }: LayerListComponentProps): ReactElement => {
     return (
         <fieldset className="layers-group">
-            <legend>{title}</legend>
+            <legend className="layers-group-title">{title}</legend>
             <ul className="layers-group-list">
                 {layers.map(layer => (
                     <li key={layer.name}>
