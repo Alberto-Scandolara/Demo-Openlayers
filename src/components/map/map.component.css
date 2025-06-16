@@ -1,3 +1,7 @@
-#map {
+.map-wrapper {
+    height: 100%;
+}
+
+.map-wrapper #map {
     height: 100%;
 }

@@ -28,8 +28,10 @@ export const LAYERS_MAPPER: Map<string, Layer> = new Map<string, Layer>([
         {
             baseLayer: graticuleLabelsLayer,
             name: 'Graticule labels',
-            group: LAYER_TYPES.GRATICULE,
+            type: LAYER_TYPES.GRATICULE,
             roles: [USER_ROLES.USER],
+            base: false,
+            visible: true,
         }
     ],
     [
@@ -37,8 +39,10 @@ export const LAYERS_MAPPER: Map<string, Layer> = new Map<string, Layer>([
         {
             baseLayer: earthquakesLayer,
             name: 'Earthquakes',
-            group: LAYER_TYPES.HEATMAP,
+            type: LAYER_TYPES.HEATMAP,
             roles: [USER_ROLES.GUEST],
+            base: false,
+            visible: true,
         }
     ],
     [
@@ -46,8 +50,10 @@ export const LAYERS_MAPPER: Map<string, Layer> = new Map<string, Layer>([
         {
             baseLayer: osmRoads,
             name: 'OSM roads',
-            group: LAYER_TYPES.IMAGE_LAYER,
+            type: LAYER_TYPES.IMAGE_LAYER,
             roles: [],
+            base: false,
+            visible: true,
         }
     ],
     [
@@ -55,8 +61,10 @@ export const LAYERS_MAPPER: Map<string, Layer> = new Map<string, Layer>([
         {
             baseLayer: osmBase,
             name: 'OSM',
-            group: LAYER_TYPES.TILE_LAYER,
+            type: LAYER_TYPES.TILE_LAYER,
             roles: [USER_ROLES.USER, USER_ROLES.GUEST],
+            base: true,
+            visible: false,
         }
     ],
     [
@@ -64,8 +72,10 @@ export const LAYERS_MAPPER: Map<string, Layer> = new Map<string, Layer>([
         {
             baseLayer: osmXyz,
             name: 'OSM xyz',
-            group: LAYER_TYPES.TILE_LAYER,
+            type: LAYER_TYPES.TILE_LAYER,
             roles: [USER_ROLES.USER, USER_ROLES.GUEST],
+            base: true,
+            visible: false,
         }
     ],
     [
@@ -73,8 +83,10 @@ export const LAYERS_MAPPER: Map<string, Layer> = new Map<string, Layer>([
         {
             baseLayer: europeanCitiesLayer,
             name: 'European cities vector image',
-            group: LAYER_TYPES.VECTOR_IMAGE_LAYER,
+            type: LAYER_TYPES.VECTOR_IMAGE_LAYER,
             roles: [USER_ROLES.USER, USER_ROLES.GUEST],
+            base: false,
+            visible: true,
         }
     ],
     [
@@ -82,8 +94,10 @@ export const LAYERS_MAPPER: Map<string, Layer> = new Map<string, Layer>([
         {
             baseLayer: countriesVectorLayer,
             name: 'Countries',
-            group: LAYER_TYPES.VECTOR_LAYER,
+            type: LAYER_TYPES.VECTOR_LAYER,
             roles: [USER_ROLES.USER, USER_ROLES.GUEST],
+            base: false,
+            visible: true,
         }
     ],
     [
@@ -91,8 +105,10 @@ export const LAYERS_MAPPER: Map<string, Layer> = new Map<string, Layer>([
         {
             baseLayer: europeanCitiesVectorLayer,
             name: 'European cities vector',
-            group: LAYER_TYPES.VECTOR_LAYER,
+            type: LAYER_TYPES.VECTOR_LAYER,
             roles: [USER_ROLES.USER, USER_ROLES.GUEST],
+            base: false,
+            visible: true,
         }
     ],
     [
@@ -100,8 +116,10 @@ export const LAYERS_MAPPER: Map<string, Layer> = new Map<string, Layer>([
         {
             baseLayer: stadiaParksVectorTileLayer,
             name: 'Strada parks',
-            group: LAYER_TYPES.VECTOR_TILE_LAYER,
+            type: LAYER_TYPES.VECTOR_TILE_LAYER,
             roles: [USER_ROLES.USER, USER_ROLES.GUEST],
+            base: true,
+            visible: false,
         }
     ],
     [
@@ -109,8 +127,10 @@ export const LAYERS_MAPPER: Map<string, Layer> = new Map<string, Layer>([
         {
             baseLayer: tileIndexGradientLayer,
             name: 'Tile index gradient',
-            group: LAYER_TYPES.WEBGL_TILE_LAYER,
+            type: LAYER_TYPES.WEBGL_TILE_LAYER,
             roles: [USER_ROLES.USER],
+            base: false,
+            visible: true,
         }
     ],
 ]);

@@ -11,15 +11,16 @@ import userConfigJSON from "./assets/jsons/db/user-config.json";
 import {STRING_EMPTY} from "./constants/constants.constant";
 
 // Components
-import MapView from "./components/map/map.component";
-import MapContainer from "./components/map/map.component";
+import { MapView } from "./components/map/map.component";
 
 // Hooks
 import {useUser} from "./hooks/useUser.hook";
 
 // Interfaces
 import {User} from "./interfaces/user.interface";
-import Controls from "./components/controls/controls.component";
+
+// Store
+import {MapProvider} from "./store/map.store";
 
 function App() {
     const { isAuthenticated, login, setUserData } = useUser();
@@ -60,8 +61,10 @@ function App() {
     }
 
     return (
-        <MapContainer>
-        </MapContainer>
+        <MapProvider>
+            <MapView>
+            </MapView>
+        </MapProvider>
     );
 }
 

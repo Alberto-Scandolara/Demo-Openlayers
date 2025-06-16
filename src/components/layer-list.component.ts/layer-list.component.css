@@ -1,0 +1,13 @@
+.layers-group {
+    border-radius: 5%;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.layers-group-title,
+.layers-group-list {
+    margin: 0;
+}
