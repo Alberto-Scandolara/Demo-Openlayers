@@ -3,9 +3,9 @@ import {graticuleLabelsLayer} from "../assets/utils/layers/graticules/graticule-
 import {earthquakesLayer} from "../assets/utils/layers/heatmaps/earthquakes.layer";
 import {osmBase} from "../assets/utils/layers/tile-layers/osm-base.layer";
 import {osmXyz} from "../assets/utils/layers/tile-layers/osm-xyz.layer";
-import {europeanCitiesLayer} from "../assets/utils/layers/vector-image-layers/european-cities.layer";
+import {citiesLayer} from "../assets/utils/layers/vector-image-layers/cities.layer";
 import {countriesVectorLayer} from "../assets/utils/layers/vector-layers/countries.layer";
-import {europeanCitiesLayer as europeanCitiesVectorLayer} from "../assets/utils/layers/vector-layers/european-cities.layer";
+import {citiesLayer as citiesVectorLayer} from "../assets/utils/layers/vector-layers/cities.layer";
 import {stadiaParksVectorTileLayer} from "../assets/utils/layers/vector-tile-layers/stadia-parks.layer";
 import {tileIndexGradientLayer} from "../assets/utils/layers/webgl-tile-layers/tile-index-gradient.layer";
 import {Layer} from "../interfaces/layer.interface";
@@ -79,10 +79,10 @@ export const LAYERS_MAPPER: Map<string, Layer> = new Map<string, Layer>([
         }
     ],
     [
-        'EUROPEAN_CITIES_VECTOR_IMAGE_LAYER',
+        'CITIES_VECTOR_IMAGE_LAYER',
         {
-            baseLayer: europeanCitiesLayer,
-            name: 'European cities vector image',
+            baseLayer: citiesLayer,
+            name: 'Cities vector image',
             type: LAYER_TYPES.VECTOR_IMAGE_LAYER,
             roles: [USER_ROLES.USER, USER_ROLES.GUEST],
             base: false,
@@ -101,10 +101,10 @@ export const LAYERS_MAPPER: Map<string, Layer> = new Map<string, Layer>([
         }
     ],
     [
-        'EUROPEAN_CITIES_VECTOR_LAYER',
+        'CITIES_VECTOR_LAYER',
         {
-            baseLayer: europeanCitiesVectorLayer,
-            name: 'European cities vector',
+            baseLayer: citiesVectorLayer,
+            name: 'Cities vector',
             type: LAYER_TYPES.VECTOR_LAYER,
             roles: [USER_ROLES.USER, USER_ROLES.GUEST],
             base: false,

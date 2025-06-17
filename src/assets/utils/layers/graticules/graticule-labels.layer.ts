@@ -1,6 +1,6 @@
 import {Graticule} from "ol";
 
-const graticuleLabelsLayer = new Graticule({
+const graticuleLabelsLayer: Graticule = new Graticule({
     showLabels: true,
 });
 

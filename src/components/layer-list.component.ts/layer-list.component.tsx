@@ -1,5 +1,5 @@
-import BaseLayer from "ol/layer/Base";
 import {FC, ReactElement} from "react";
+import BaseLayer from "ol/layer/Base";
 
 // Css
 import './layer-list.component.css';
@@ -10,14 +10,14 @@ interface LayerListComponentProps {
     type: 'radio' | 'checkbox';
     name: string;
     onToggle: (layerName: string) => void;
-};
+}
 
 const LayerList: FC<LayerListComponentProps> = ({ title, layers, type, name, onToggle }: LayerListComponentProps): ReactElement => {
     return (
         <fieldset className="layers-group">
             <legend className="layers-group-title">{title}</legend>
             <ul className="layers-group-list">
-                {layers.map(layer => (
+                {layers.map((layer: { name: string; baseLayer: BaseLayer }): ReactElement => (
                     <li key={layer.name}>
                         <label>
                             <input
