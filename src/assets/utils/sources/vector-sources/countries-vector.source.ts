@@ -1,12 +1,31 @@
 import VectorSource from "ol/source/Vector";
+import TopoJSON from 'ol/format/TopoJSON';
 import GeoJSON from "ol/format/GeoJSON";
-import countriesJson from "../../../jsons/geo/countries.geo.json";
 
-const countriesVectorSource: VectorSource = new VectorSource({
+// Assets
+import countriesJson from "../../../jsons/geo/countries.geo.json";
+import countriesTopoJson from "../../../jsons/topo/countries.topojson.json";
+import countriesSimplifiedTopoJson from "../../../jsons/topo/countries.topojson.json";
+
+// Constants
+import {FEATURES_PROJECTION} from "../../../../constants/feature-projections";
+
+const countriesGeoJsonVectorSource: VectorSource = new VectorSource({
     features: new GeoJSON().readFeatures(countriesJson, {
-        featureProjection: 'EPSG:3857',
+        featureProjection: FEATURES_PROJECTION.EPSG_3857,
     }),
 });
 
+const countriesVectorSource = new VectorSource({
+    features: new TopoJSON().readFeatures(countriesTopoJson, {
+        featureProjection: FEATURES_PROJECTION.EPSG_3857,
+    }),
+});
 
-export { countriesVectorSource };
+const countriesSimplifiedTopoJsonVectorSource = new VectorSource({
+    features: new TopoJSON().readFeatures(countriesSimplifiedTopoJson, {
+        featureProjection: FEATURES_PROJECTION.EPSG_3857,
+    }),
+});
+
+export { countriesGeoJsonVectorSource, countriesVectorSource, countriesSimplifiedTopoJsonVectorSource };

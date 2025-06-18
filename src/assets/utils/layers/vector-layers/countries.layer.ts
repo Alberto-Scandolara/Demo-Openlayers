@@ -3,7 +3,7 @@ import Style from "ol/style/Style";
 import Stroke from "ol/style/Stroke";
 import Fill from "ol/style/Fill";
 import { FeatureLike } from "ol/Feature";
-import {countriesVectorSource} from "../../sources/vector-sources/countries-vector.source";
+import { countriesSimplifiedTopoJsonVectorSource } from "../../sources/vector-sources/countries-vector.source";
 
 const highlightList = ['IT', 'FR', 'DE'];
 
@@ -28,12 +28,12 @@ const fadedStyle = new Style({
 });
 
 const borderStyleFunction = (feature: FeatureLike): Style => {
-    const iso = feature.get('ISO_A2'); // Works for both Feature and RenderFeature
+    const iso = feature.get('ISO_A2');
     return highlightList.includes(iso) ? highlightedStyle : fadedStyle;
 };
 
 const countriesVectorLayer = new VectorLayer({
-    source: countriesVectorSource,
+    source: countriesSimplifiedTopoJsonVectorSource,
     style: borderStyleFunction,
 });
 

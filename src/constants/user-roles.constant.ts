@@ -1,5 +1,11 @@
 export const USER_ROLES: { [key: string]: string } = {
-    ADMIN: "ADMIN",
-    USER: "USER",
-    GUEST: "GUEST",
+    // DSO
+    MAP_VIEWER: "MAP_VIEWER",
+    MAP_OPERATOR: "MAP_OPERATOR",
+    MAP_MASTER: "MAP_MASTER",
+
+    // GSP
+    ADMINISTRATOR: "ADMINISTRATOR",
+    CONTROL_ROOM_OPERATOR: "CONTROL_ROOM_OPERATOR",
+    DOMAIN_USER: "DOMAIN_USER",
 };
