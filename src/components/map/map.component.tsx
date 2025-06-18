@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 
 // Css
-import './map.component.css';
+import './map.component.scss';
 
 // Components
 import { LayerControls } from "../layer-controls/layer-controls.component";

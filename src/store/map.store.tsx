@@ -2,6 +2,7 @@ import {createContext, useContext, useEffect, useState, ReactNode, Context} from
 import View from "ol/View";
 import { fromLonLat } from "ol/proj";
 import Map from "ol/Map";
+import { defaults as defaultControls, Attribution } from 'ol/control';
 
 // Assets
 import mapConfigJson from '../assets/jsons/db/map-config.json';
@@ -35,6 +36,14 @@ const MapProvider = ({ children }: { children: ReactNode }) => {
                 center: fromLonLat(center),
                 zoom,
             }),
+            controls: defaultControls({
+                attribution: false  // disable default attribution control
+            }).extend([
+                new Attribution({
+                    collapsible: true,
+                    collapsed: false
+                })
+            ])
         });
 
         const layers: Layer[] = Array.from(

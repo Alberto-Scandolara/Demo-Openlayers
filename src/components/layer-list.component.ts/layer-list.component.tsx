@@ -2,7 +2,7 @@ import {FC, ReactElement} from "react";
 import BaseLayer from "ol/layer/Base";
 
 // Css
-import './layer-list.component.css';
+import './layer-list.component.scss';
 
 interface LayerListComponentProps {
     title: string;

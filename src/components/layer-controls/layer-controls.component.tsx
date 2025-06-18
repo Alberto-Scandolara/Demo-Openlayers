@@ -4,7 +4,7 @@ import {ReactElement} from "react";
 import {LayerList} from "../layer-list.component.ts/layer-list.component";
 
 // Css
-import './layer-controls.component.css';
+import './layer-controls.component.scss';
 
 // Hooks
 import {useMap} from "../../hooks/useMap.hook";
