@@ -16,16 +16,20 @@ const countriesGeoJsonVectorSource: VectorSource = new VectorSource({
     }),
 });
 
-const countriesVectorSource = new VectorSource({
+const countriesVectorSource: VectorSource  = new VectorSource({
     features: new TopoJSON().readFeatures(countriesTopoJson, {
         featureProjection: FEATURES_PROJECTION.EPSG_3857,
     }),
 });
 
-const countriesSimplifiedTopoJsonVectorSource = new VectorSource({
+const countriesSimplifiedTopoJsonVectorSource: VectorSource  = new VectorSource({
     features: new TopoJSON().readFeatures(countriesSimplifiedTopoJson, {
         featureProjection: FEATURES_PROJECTION.EPSG_3857,
     }),
 });
 
-export { countriesGeoJsonVectorSource, countriesVectorSource, countriesSimplifiedTopoJsonVectorSource };
+export {
+    countriesGeoJsonVectorSource,
+    countriesVectorSource,
+    countriesSimplifiedTopoJsonVectorSource
+};

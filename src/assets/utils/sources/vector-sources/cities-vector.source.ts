@@ -14,7 +14,9 @@ const features: Feature<Point>[] = (cities as Array<any>)
 
 const citiesVectorSource: VectorSource = new VectorSource({
     features,
-    attributions: ['https://github.com/lutangar/cities.json']
+    attributions: [
+        '<a href="https://github.com/lutangar/cities.json" target="_blank">Lutangar\'s github</a>',
+    ]
 });
 
 export { citiesVectorSource };
